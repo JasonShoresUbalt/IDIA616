@@ -48,6 +48,10 @@ label .hamburger {
   transition: .5s ease-in-out;
 }
 
+label {
+  background: #fff;
+}
+
 label .hamburger:after, label .hamburger:before {
   transition: .5s ease-in-out;
   content: "";
@@ -129,15 +133,18 @@ label a {
   background: #D4D4D4;
   border-radius: 25px;
   text-align: center;
+}
+
+.card-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .card-image {
-  display: inline-block;
   width: 30%;
-  vertical-align: middle;
+  margin-left: 100px;
 }
 
 .card-image img, .card-image picture {
@@ -146,11 +153,11 @@ label a {
 }
 
 .card-text {
-  display: inline-block;
   width: 65%;
-  vertical-align: middle;
-  margin-left: 5%;
+  margin-left: 5%; 
+  text-align: center; /* this will center the text within card-text */
 }
+
 
 .text-section,
 .image-section {
